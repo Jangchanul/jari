@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()">회원가입(2/2)</button>
+            <button type="button" class="hd_not"></button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+
+    <div class="reser_wrap grid">
+        <h2>예약할 날짜와 시간을 선택해주세요.</h2>
+        <div class="res_1">
+            <input type="datetime-local">
+        </div>
+        <div class="res_2">
+            <div>
+                <button type="button" class="da_left"></button>
+                <h3>2021년 10월</h3>
+                <button type="button" class="da_right"></button>
+            </div>
+            <table>
+                <tr>
+                    <td>일</td>
+                    <td>월</td>
+                    <td>화</td>
+                    <td>수</td>
+                    <td>목</td>
+                    <td>금</td>
+                    <td>토</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <ul class="res_3">
+            <li>
+                <input type="radio" name="res" id="res1">
+                <label for="res1">09:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res2">
+                <label for="res2">10:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res3">
+                <label for="res3">11:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res4">
+                <label for="res4">12:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res5">
+                <label for="res5">13:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res6">
+                <label for="res6">14:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res7">
+                <label for="res7">15:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res8">
+                <label for="res8">16:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res9">
+                <label for="res9">17:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res10">
+                <label for="res10">18:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res11">
+                <label for="res11">19:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res12">
+                <label for="res12">20:00</label>
+            </li>
+            <li>
+                <input type="radio" name="res" id="res13">
+                <label for="res13">21:00</label>
+            </li>
+        </ul>
+
+        <div class="res_4">
+            <h3>방문할 인원을 선택해주세요.</h3>
+            <div class="number">
+                <a href="#" id="increaseQuantity">+</a>
+                <span id="numberUpDown">1</span>
+                <a href="#" id="decreaseQuantity">-</a>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $('#decreaseQuantity').click(function (e) {
+                        e.preventDefault();
+                        var stat = $('#numberUpDown').text();
+                        var num = parseInt(stat, 10);
+                        num--;
+                        if (num <= 0) {
+                            alert('더이상 줄일수 없습니다.');
+                            num = 1;
+                        }
+                        $('#numberUpDown').text(num);
+                    });
+                    $('#increaseQuantity').click(function (e) {
+                        e.preventDefault();
+                        var stat = $('#numberUpDown').text();
+                        var num = parseInt(stat, 10);
+                        num++;
+
+                        if (num > 5) {
+                            alert('더이상 늘릴수 없습니다.');
+                            num = 5;
+                        }
+                        $('#numberUpDown').text(num);
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="res_5">
+            <ul class="market_list market_list2 grid">
+                <li onclick="location.href='./market_view.html'">
+                    <div><img src="./img/lo7.png" alt=""></div>
+                    <div>
+                        <p>김새는김밥 연수점</p>
+                        <p>영업시간 | 월~금 09:00~22:00</p>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <button type="button" onclick="location.href='./reser_bf.html'">
+                    <p>예약하기</p>
+                </button>
+                <button type="button" onclick="location.href=''">
+                    <p>문자로 예약</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="trick"></div>
+
+</body>
+
+</html>

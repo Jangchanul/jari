@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()">예약정보 상세보기</button>
+            <button type="button" class="hd_not"></button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+
+    <div class="reser_info grid">
+        <div>
+            <div><img src="./img/zz1.png" alt=""></div>
+            <ul>
+                <li><button type="button"><img src="./img/zz3.png" alt="전화"></button></li>
+                <li><button type="button"><img src="./img/zz4.png" alt="길찾기"></button></li>
+                <li><button type="button"><img src="./img/zz5.png" alt="가게페이지"></button></li>
+                <li><button type="button" onclick="delOk()"><img src="./img/zz6.png" alt="예약취소"></button></li>
+            </ul>
+        </div>
+        <div>
+            <h2>김밥지옥 송도점</h2>
+            <h2>10.28 | 12:00 예약</h2>
+        </div>
+        <div>
+            <h3>가게정보</h3>
+            <ul>
+                <li>032-444-5555</li>
+                <li>평일 09:00~21:00</li>
+                <li>연수구 연수1동 연수시장 101호</li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <p>예약일시</p>
+                <p>2021.10.14 | 09:00:33</p>
+            </div>
+            <div>
+                <p>예약인원</p>
+                <p>2명</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function delOk() {
+            if (!confirm('예약을 취소요청 하시겠습니까?')) {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

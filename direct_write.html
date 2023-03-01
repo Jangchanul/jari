@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()">게시하기</button>
+            <button type="button" class="hd_not"></button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+
+    <form action="./dir_pay.html" class="direct_wr_wrap grid">
+        <div>
+            <input type="text" placeholder="게시 글의 제목을 입력해주세요">
+        </div>
+        <div>
+            <div><img src="./img/aa6.png" alt=""></div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="글의 내용을 입력해주세요"></textarea>
+        </div>
+        <div>
+            <h3>판매물품의 사진을 첨부해주세요</h3>
+            <div class="dir_file">
+                <input type="file" id="dir_fi">
+                <label for="dir_fi">첨부하기</label>
+            </div>
+        </div>
+        <div>
+            <h3>직거래 지역을 선택해주세요<span><span><span>최대 3곳 까지 가능합니다</span></h3>
+            <button type="button">추가하기</button>
+        </div>
+        <div>
+            <button type="submit" class="bt_ne bt_nes grid">
+                <p>결제 후 게시하기</p>
+            </button>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#test').on('keyup', function () {
+                $('#test_cnt').html("(" + $(this).val().length + " / 500)");
+
+                if ($(this).val().length > 500) {
+                    $(this).val($(this).val().substring(0, 500));
+                    $('#test_cnt').html("(500 / 500)");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

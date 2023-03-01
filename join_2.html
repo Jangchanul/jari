@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()">로그인</button>
+            <button type="button" class="hd_not"></button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+
+    <div class="login_wrap logina_wrap grid">
+        <h2>회원가입을 시작합니다.</h2>
+        <p>아래 내용을 입력해주세요</p>
+        <form action="./login.html">
+            <ul>
+                <li>
+                    <div>
+                        <h3>이름</h3>
+                        <input type="text" placeholder="이름을 입력해주세요">
+                    </div>
+                    <div>
+                        <h3>핸드폰번호</h3>
+                        <input type="number" placeholder="숫자만 입력해주세요">
+                    </div>
+                    <button type="button" onclick="location.href='./market_list'" class="bt_ne bt_neq">
+                        <p>본인인증하러가기</p>
+                    </button>
+                </li>
+                <li>
+                    <div>
+                        <h3>이메일</h3>
+                        <div>
+                            <input type="email" placeholder="이메일을 입력해주세요">
+                            <div class="em_div"></div>
+                            <!--<div class="em_div"></div> 중복 되었을대-->
+                        </div>
+
+                    </div>
+                    <div>
+                        <h3>비밀번호</h3>
+                        <input type="password" placeholder="6자리이상의 영문, 숫자를 조합해주세요">
+                    </div>
+                    <div>
+                        <h3>비밀번호 확인</h3>
+                        <input type="password" placeholder="한번 더 입력해주세요">
+                    </div>
+                </li>
+                <li style="padding-bottom: 0;">
+                    <h2>서비스 이용약관을 확인해주세요</h2>
+                    <ul class="chk_wrap chk_wrap_join">
+                        <li>
+                            <input type="checkbox" id="login_check2">
+                            <label for="login_check2">예약의 품격 서비스 이용약관에 동의(필수)<span
+                                    onclick="location.href='./for1.html'">보기</span></label>
+                        </li>
+                        <li style="border-bottom:1px solid #ccc;padding-bottom:6.666vw;margin-bottom:0">
+                            <input type="checkbox" id="login_check3">
+                            <label for="login_check3">개인정보취급방침에 동의합니다 (필수)<span
+                                    onclick="location.href='./for2.html'">보기</span></label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button type="button" onclick="location.href='./join_5.html'" class="bt_ne bt_neqw">
+                <p>입력 완료</p>
+            </button>
+        </form>
+
+    </div>
+
+    <div class="trick"></div>
+
+</body>
+
+</html>

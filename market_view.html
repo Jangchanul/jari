@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2 hd_3">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()"></button>
+            <button type="button" class="hd_not"></button>
+        </div>
+    </header>
+
+    <div class="event_view market_view">
+        <div><img src="./img/lo6.png" alt=""></div>
+        <div class="market_title grid">
+            <h2>김밥지옥</h2>
+        </div>
+
+        <div class="ma_bts grid">
+            <button type="button"><img src="./img/z2.png" alt="전화"></button>
+            <button type="button"><img src="./img/z3.png" alt="길찾기"></button>
+            <button type="button"><img src="./img/z4.png" alt="문자 문의"></button>
+            <button type="button"><img src="./img/z5.png" alt="공유하기"></button>
+        </div>
+
+        <div class="mar_infos">
+            <div>
+                <p class="mar_p1">032-888-8888</p>
+                <p class="mar_p2">09:00 ~ 22:00<span>예약가능 시간 | 21:00 까지</span></p>
+                <p class="mar_p3">참치김밥, 짬뽕라면</p>
+                <p class="mar_p4">매월 첫째 주 수요일</p>
+                <p class="mar_p5">연수구 송도로 111-1 1층</p>
+                <p class="mar_p6">예약시 결제금액 3% 할인</p>
+            </div>
+        </div>
+
+        <div class="mar_map grid"><img src="./img/cc3.png" alt=""></div>
+
+
+        <div class="mar_info grid">
+            <h3>공지사항</h3>
+            <div>둘째 주, 넷째 주 일요일은 휴무입니다.</div>
+        </div>
+
+        <div class="mar_info2 grid">
+            <div class="tab_wrap">
+                <div class="tab_menu_container">
+                    <button class="tab_menu_btn on" type="button">가격표</button>
+                    <button class="tab_menu_btn" type="button">갤러리</button>
+                </div> <!-- tab_menu_container e -->
+
+                <div class="tab_box_container">
+                    <div class="tab_box on">
+                        <div><img src="./img/lo13.png" alt=""></div>
+                    </div>
+                    <div class="tab_box">
+                        <ul class="mar_gal">
+                            <li><img src="./img/z9.png" alt=""></li>
+                            <li><img src="./img/z9.png" alt=""></li>
+                            <li><img src="./img/z9.png" alt=""></li>
+                            <li><img src="./img/z9.png" alt=""></li>
+                            <li><img src="./img/z9.png" alt=""></li>
+                            <li><img src="./img/z9.png" alt=""></li>
+                        </ul>
+                        <button type="button" class="bt_ne bt_nev" onclick="location.href='./market_gallery.html'" style="margin-top: 6.666vw;">
+                            <p>더보기</p>
+                        </button>
+                    </div>
+                </div> <!-- tab_box_container e -->
+            </div> <!-- tab_wrap e -->
+
+            <style type="text/css">
+                .tab_menu_container {
+                    display: flex;
+                    margin-bottom: 6.666vw;
+                }
+
+                .tab_menu_btn {
+                    font-size: 4.444vw;
+                    color: #ccc;
+                    margin-right: 3.888vw;
+                }
+
+                .tab_menu_btn.on {
+                    font-weight: 700;
+                    color: #000;
+                }
+
+                .tab_box {
+                    display: none;
+                }
+
+                .tab_box.on {
+                    display: block;
+                }
+                .shadow{box-shadow: none;}
+            </style>
+
+            <script type="text/javascript">
+                $(function () {
+                    $('.tab_menu_btn').on('click', function () {
+                        //버튼 색 제거,추가
+                        $('.tab_menu_btn').removeClass('on');
+                        $(this).addClass('on')
+
+                        //컨텐츠 제거 후 인덱스에 맞는 컨텐츠 노출
+                        var idx = $('.tab_menu_btn').index(this);
+
+                        $('.tab_box').hide();
+                        $('.tab_box').eq(idx).show();
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="mar_even grid">
+            <h3>이벤트</h3>
+            <div><img src="./img/z12.png" alt=""></div>
+            <h4>[이벤트] 신메뉴 떡볶이 드디어 오픈!<span></span></h4>
+            <p>21.12.30까지</p>
+        </div>
+
+        <div class="grid">
+            <button type="button" class="bt_ne bt_nes" onclick="location.href='./reservation.html'">
+                <p>예약하러 가기</p>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="trick"></div>
+</body>
+
+</html>

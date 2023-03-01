@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()">갤러리</button>
+            <button type="button" class="hd_not"></button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+
+    <div class="tab_wrap">
+
+        <div class="tab_box_container">
+            <div class="tab_box on"><img src="./img/z10.png" alt=""></div>
+            <div class="tab_box"><img src="./img/z12.png" alt=""></div>
+            <div class="tab_box"><img src="./img/z10.png" alt=""></div>
+            <div class="tab_box"><img src="./img/z12.png" alt=""></div>
+            <div class="tab_box"><img src="./img/z10.png" alt=""></div>
+            <div class="tab_box"><img src="./img/z12.png" alt=""></div>
+        </div> <!-- tab_box_container e -->
+
+        <div class="mar_gall grid">
+            <div style="padding-top: 0;">맛있네요</div>
+            <div>
+                <p>작성자 본인</p>
+                <p>작성일 | 10.28</p>
+            </div>
+            <div>
+                <div><img src="./img/z13.png" alt=""></div>
+                <p>담에 또 먹으러 올게요 :)</p>
+            </div>
+            <div>
+                <button type="button" onclick="location.href=''"><p>수정하기</p></button>
+                <button type="button" onclick="location.href=''"><p>삭제하기</p></button>
+            </div>
+        </div>
+
+        <div class="tab_menu_container grid">
+            <button class="tab_menu_btn on" type="button"><img src="./img/z9.png" alt=""></button>
+            <button class="tab_menu_btn" type="button"><img src="./img/z11.png" alt=""></button>
+            <button class="tab_menu_btn" type="button"><img src="./img/z9.png" alt=""></button>
+            <button class="tab_menu_btn" type="button"><img src="./img/z11.png" alt=""></button>
+            <button class="tab_menu_btn" type="button"><img src="./img/z9.png" alt=""></button>
+            <button class="tab_menu_btn" type="button"><img src="./img/z11.png" alt=""></button>
+        </div> <!-- tab_menu_container e -->
+
+    </div> <!-- tab_wrap e -->
+
+    <style type="text/css">
+        .tab_menu_container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tab_menu_btn {
+            width: 31.333%;
+            height: 28.888vw;
+            margin-right: 2.333vw;
+            margin-bottom: 2.333vw;
+        }
+
+        .tab_menu_btn:nth-child(3n){margin-right: 0;}
+
+        .tab_menu_btn.on {}
+
+        .tab_box {
+            display: none;
+        }
+
+        .tab_box.on {
+            display: block;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.tab_menu_btn').on('click', function () {
+                //버튼 색 제거,추가
+                $('.tab_menu_btn').removeClass('on');
+                $(this).addClass('on')
+
+                //컨텐츠 제거 후 인덱스에 맞는 컨텐츠 노출
+                var idx = $('.tab_menu_btn').index(this);
+
+                $('.tab_box').hide();
+                $('.tab_box').eq(idx).show();
+            });
+        })
+    </script>
+
+
+
+    <div class="trick "></div>
+
+</body>
+
+</html>

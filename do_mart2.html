@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()">도깨비마트</button>
+            <button type="button" class="hd_not"></button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+
+    <div class="his2 grid">
+        <div class="his_tab">
+            <a href="./do_mart.html">거래신청 물품</a>
+            <a href="./do_mart2.html" class="his_act">내가 게시한 물품</a>
+        </div>
+
+        <ul class="dos_ul">
+            <li onclick="location.href=''">
+                <div><img src="./img/cz1.png" alt=""></div>
+                <div>
+                    <h3>[급처] 양식용 접시 급처합니다!</h3>
+                    <h4>10,000원</h4>
+                    <p>10.27 | 15:00</p>
+                </div>
+            </li>
+        </ul>
+        <div class="byts">
+            <button type="button" class="hhb">거래신청자 확인</button>
+            <button type="button">판매완료</button>
+        </div>
+    </ul>
+
+    <div class="do_dim dos_ty">
+        <div>
+            <div class="grid">
+                <button type="button" class="dim_close"></button>
+                <h2>거래신청자 확인하기</h2>
+                <button type="button"></button>
+            </div>
+            <ul class="grid">
+                <li>
+                    <h3>김상성<span></span></h3>
+                    <div>
+                        <p>010-3456-7891</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3>김상성</h3>
+                    <div>
+                        <p>010-3456-7891</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function(){
+            $('.hhb').click(function(){
+                $('.dos_ty').fadeIn();
+            });
+            $('.dim_close').click(function(){
+                $('.dos_ty').hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()">구인 글 작성</button>
+            <button type="button" class="hd_not"></button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+
+    <form action="./job_pay.html" class="job_wr_wrap grid">
+        <div>
+            <select name="" id="">
+                <option value="">업체 분류를 선택하세요.</option>
+                <option value="">1</option>
+                <option value="">2</option>
+            </select>
+            <select name="" id="">
+                <option value="">소분류를 선택하세요.</option>
+                <option value="">1</option>
+                <option value="">2</option>
+            </select>
+        </div>
+        <div>
+            <input type="numer" placeholder="제시할 급여를 입력하세요.">
+            <div>
+                <input type="checkbox" id="jw1">
+                <label for="jw1">협의 후 결정합니다.</label>
+            </div>
+        </div>
+        <div>
+            <h3>내용</h3>
+            <div class="text_job">
+                <textarea id="test" name="test" cols="30" rows="10" placeholder="수행할 업무에 대한 설명을 작성해주세요."></textarea>
+                <div>
+                    <p></p>
+                    <div id="test_cnt">(0 / 500)</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>근무지역</h3>
+            <div class="map_job">
+                <div>
+                    <button type="button"></button>
+                    <input type="text" placeholder="근무지역을 선택해주세요.">
+                </div>
+                <input type="text" placeholder="상세주소를 입력하세요">
+            </div>
+        </div>
+        <div>
+            <h3>업무시간</h3>
+            <div class="time_job">
+                <div>
+                    <input type="time">
+                    <p>부터</p>
+                </div>
+                <div>
+                    <input type="time">
+                    <p>까지</p>
+                </div>
+            </div>
+            <div class="job_sea">
+                <input type="checkbox" id="job_sd">
+                <label for="job_sd">협의 후 결정합니다.</label>
+            </div>
+        </div>
+        <div>
+            <h3>업무기간</h3>
+            <ul class="job_radios">
+                <li>
+                    <input type="radio" id="jra1" name="jra">
+                    <label for="jra1">하루</label>
+                </li>
+                <li>
+                    <input type="radio" id="jra2" name="jra">
+                    <label for="jra2">단기(3개월미만)</label>
+                </li>
+                <li>
+                    <input type="radio" id="jra3" name="jra">
+                    <label for="jra3">장기(6개월 이상)</label>
+                </li>
+                <li>
+                    <input type="radio" id="jra4" name="jra">
+                    <label for="jra4">협의 후 결정합니다.</label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>파일업로드<span>구직자에게 필요한 정보가 담겨있는 사진을 업로드 해주세요.</span></h3>
+            <input type="file" id="jo_hy">
+            <label for="jo_hy">
+                <img src="./img/fz.png" alt="">
+            </label>
+        </div>
+        <div>
+            <h3>서비스 이용약관을 확인해주세요</h3>
+            <ul class="job_radios">
+                <li>
+                    <input type="radio" id="jra5" name="jra2">
+                    <label for="jra5">예약의 품격 앱의 회원들에게만 공개합니다.</label>
+                </li>
+                <li>
+                    <input type="radio" id="jra6" name="jra2">
+                    <label for="jra6">회원, 비회원 모두에게 공개합니다.</label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="bt_ne bt_nes" onclick="location.href='./job_support_3.html'" style="margin-top: 0;">
+                <p>지원하기</p>
+            </button>
+        </div>
+    
+    </form>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#test').on('keyup', function () {
+                $('#test_cnt').html("(" + $(this).val().length + " / 500)");
+
+                if ($(this).val().length > 500) {
+                    $(this).val($(this).val().substring(0, 500));
+                    $('#test_cnt').html("(500 / 500)");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

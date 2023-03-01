@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()">지역으로 설정하기</button>
+            <button type="button" class="hd_not"></button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+    <div class="area_top">
+        <h2 class="grid">시, 구, 군을 선택 해주세요</h2>
+    </div>
+    
+
+    <div class="area_form grid">
+        <div>
+            <button type="button">완료</button>
+        </div>
+        <div class="container tab_wrap">
+            <ul class="tab_title">
+                <li class="on">서울특별시</li>
+                <li>인천광역시</li>
+                <li>대전광역시</li>
+                <li>대구광역시</li>
+                <li>부산광역시</li>
+                <li>광주광역시</li>
+                <li>울산광역시</li>
+                <li>세종특별자치시</li>
+                <li>경기도</li>
+                <li>강원도</li>
+                <li>충청남도</li>
+                <li>충청북도</li>
+                <li>전라북도</li>
+                <li>전라남도</li>
+                <li>경상남도</li>
+                <li>경상북도</li>
+                <li>제주특별자치도</li>
+            </ul>
+            <div class="tab_cont">
+                <div class="on">
+                    <ul>
+                        <li>
+                            <input type="radio" id="ar1" name="ar_1">
+                            <label for="ar1">종로구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar2" name="ar_1">
+                            <label for="ar2">중구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar2_1" name="ar_1">
+                            <label for="ar2_1">용산구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar3" name="ar_1">
+                            <label for="ar3">성동구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar4" name="ar_1">
+                            <label for="ar4">광진구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar5" name="ar_1">
+                            <label for="ar5">동대문구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar6" name="ar_1">
+                            <label for="ar6">중량구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar7" name="ar_1">
+                            <label for="ar7">성북구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar8" name="ar_1">
+                            <label for="ar8">강북구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar9" name="ar_1">
+                            <label for="ar9">도봉구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar10" name="ar_1">
+                            <label for="ar10">노원구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar11" name="ar_1">
+                            <label for="ar11">은평구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar12" name="ar_1">
+                            <label for="ar12">서대문구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar13" name="ar_1">
+                            <label for="ar13">마포구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar14" name="ar_1">
+                            <label for="ar14">양천구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar15" name="ar_1">
+                            <label for="ar15">강서구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar16" name="ar_1">
+                            <label for="ar16">구로구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar17" name="ar_1">
+                            <label for="ar17">금천구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar18" name="ar_1">
+                            <label for="ar18">영등포구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar19" name="ar_1">
+                            <label for="ar19">동작구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar20" name="ar_1">
+                            <label for="ar20">관악구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar21" name="ar_1">
+                            <label for="ar21">서초구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar22" name="ar_1">
+                            <label for="ar22">강남구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar23" name="ar_1">
+                            <label for="ar23">송파구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ar24" name="ar_1">
+                            <label for="ar24">강동구</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="aq1" name="aq_1">
+                            <label for="aq1">중구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="aq2" name="aq_1">
+                            <label for="aq2">동구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="aq3" name="aq_1">
+                            <label for="aq3">미추홀구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="aq4" name="aq_1">
+                            <label for="aq4">연수구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="aq5" name="aq_1">
+                            <label for="aq5">남동구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="aq6" name="aq_1">
+                            <label for="aq6">부평구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="aq7" name="aq_1">
+                            <label for="aq7">계양구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="aq8" name="aq_1">
+                            <label for="aq8">강화군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="aq9" name="aq_1">
+                            <label for="aq9">용진군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qw1" name="qw_1">
+                            <label for="qw1">동구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qw2" name="qw_1">
+                            <label for="qw2">중구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qw3" name="qw_1">
+                            <label for="qw3">서구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qw4" name="qw_1">
+                            <label for="qw4">유성구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qw5" name="qw_1">
+                            <label for="qw5">대덕구</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qe1" name="qe1">
+                            <label for="qe1">중구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qe2" name="qe1">
+                            <label for="qe2">동구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qe3" name="qe1">
+                            <label for="qe3">서구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qe4" name="qe1">
+                            <label for="qe4">남구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qe5" name="qe1">
+                            <label for="qe5">북구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qe6" name="qe1">
+                            <label for="qe6">수성구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qe7" name="qe1">
+                            <label for="qe7">달서구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qe8" name="qe1">
+                            <label for="qe8">달성구</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qt1" name="qt_1">
+                            <label for="qt1">중구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt2" name="qt_1">
+                            <label for="qt2">서구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt3" name="qt_1">
+                            <label for="qt3">동구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt4" name="qt_1">
+                            <label for="qt4">영도구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt5" name="qt_1">
+                            <label for="qt5">부산진구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt6" name="qt_1">
+                            <label for="qt6">동래구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt7" name="qt_1">
+                            <label for="qt7">남구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt8" name="qt_1">
+                            <label for="qt8">북구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt9" name="qt_1">
+                            <label for="qt9">해운대구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt10" name="qt_1">
+                            <label for="qt10">사하구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt11" name="qt_1">
+                            <label for="qt11">금정구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt12" name="qt_1">
+                            <label for="qt12">강서구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt13" name="qt_1">
+                            <label for="qt13">연제구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt14" name="qt_1">
+                            <label for="qt14">수영구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt15" name="qt_1">
+                            <label for="qt16">사상구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qt16" name="qt_1">
+                            <label for="qt16">기장군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qy1" name="qy_1">
+                            <label for="qy1">동구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qy2" name="qy_1">
+                            <label for="qy2">서구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qy3" name="qy_1">
+                            <label for="qy3">남구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qy4" name="qy_1">
+                            <label for="qy4">북구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qy5" name="qy_1">
+                            <label for="qy5">광산구</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qu1" name="qu_1">
+                            <label for="qu1">중구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qu2" name="qu_1">
+                            <label for="qu2">남구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qu3" name="qu_1">
+                            <label for="qu3">동구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qu4" name="qu_1">
+                            <label for="qu4">북구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qu5" name="qu_1">
+                            <label for="qu5">울주군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qi1" name="qi_1">
+                            <label for="qi1">조치원읍</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi2" name="qi_1">
+                            <label for="qi2">연기면</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi3" name="qi_1">
+                            <label for="qi3">연동면</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi4" name="qi_1">
+                            <label for="qi4">부강면</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi5" name="qi_1">
+                            <label for="qi5">금남면</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi6" name="qi_1">
+                            <label for="qi6">장군명</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi7" name="qi_1">
+                            <label for="qi7">연서면</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi8" name="qi_1">
+                            <label for="qi8">전의면</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi9" name="qi_1">
+                            <label for="qi9">전동면</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi10" name="qi_1">
+                            <label for="qi10">소정면</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi11" name="qi_1">
+                            <label for="qi11">한솔동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi12" name="qi_1">
+                            <label for="qi12">새롬동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi13" name="qi_1">
+                            <label for="qi13">도담동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi14" name="qi_1">
+                            <label for="qi14">해밀동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi15" name="qi_1">
+                            <label for="qi15">아름동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi16" name="qi_1">
+                            <label for="qi16">종촌동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi17" name="qi_1">
+                            <label for="qi17">고운동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi18" name="qi_1">
+                            <label for="qi18">소담동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi19" name="qi_1">
+                            <label for="qi19">보람동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi20" name="qi_1">
+                            <label for="qi20">대평동</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qi21" name="qi_1">
+                            <label for="qi21">다정동</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qo1" name="qo_1">
+                            <label for="qo1">수원시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo2" name="qo_1">
+                            <label for="qo2">고양시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo3" name="qo_1">
+                            <label for="qo3">용인시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo4" name="qo_1">
+                            <label for="qo4">성남시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo5" name="qo_1">
+                            <label for="qo5">부천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo6" name="qo_1">
+                            <label for="qo6">화성시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo7" name="qo_1">
+                            <label for="qo7">안산시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo8" name="qo_1">
+                            <label for="qo8">남양주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo9" name="qo_1">
+                            <label for="qo9">안양시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo10" name="qo_1">
+                            <label for="qo10">평택시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo11" name="qo_1">
+                            <label for="qo11">평택시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo12" name="qo_1">
+                            <label for="qo12">시흥시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo13" name="qo_1">
+                            <label for="qo13">파주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo14" name="qo_1">
+                            <label for="qo14">의정부시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo15" name="qo_1">
+                            <label for="qo15">김포시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo16" name="qo_1">
+                            <label for="qo16">광주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo17" name="qo_1">
+                            <label for="qo17">광명시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo18" name="qo_1">
+                            <label for="qo18">군포시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo19" name="qo_1">
+                            <label for="qo19">하남시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo20" name="qo_1">
+                            <label for="qo20">오산시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo21" name="qo_1">
+                            <label for="qo21">양주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo22" name="qo_1">
+                            <label for="qo22">이천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo23" name="qo_1">
+                            <label for="qo23">구리시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo24" name="qo_1">
+                            <label for="qo24">안성시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo25" name="qo_1">
+                            <label for="qo25">포천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo26" name="qo_1">
+                            <label for="qo26">의왕시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo27" name="qo_1">
+                            <label for="qo27">양평군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo28" name="qo_1">
+                            <label for="qo28">여주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo29" name="qo_1">
+                            <label for="qo29">동두천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo30" name="qo_1">
+                            <label for="qo30">가평군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo31" name="qo_1">
+                            <label for="qo31">과천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qo32" name="qo_1">
+                            <label for="qo32">연천군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qp1" name="qp_1">
+                            <label for="qp1">춘천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp2" name="qp_1">
+                            <label for="qp2">원주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp3" name="qp_1">
+                            <label for="qp3">강릉시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp4" name="qp_1">
+                            <label for="qp4">동해시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp5" name="qp_1">
+                            <label for="qp5">태백시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp6" name="qp_1">
+                            <label for="qp6">속초시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp7" name="qp_1">
+                            <label for="qp7">삼척시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp8" name="qp_1">
+                            <label for="qp8">홍천군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp9" name="qp_1">
+                            <label for="qp9">횡성군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp10" name="qp_1">
+                            <label for="qp10">영월군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp11" name="qp_1">
+                            <label for="qp11">평창군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp12" name="qp_1">
+                            <label for="qp12">정선군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp13" name="qp_1">
+                            <label for="qp13">철원군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp14" name="qp_1">
+                            <label for="qp14">화천군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp15" name="qp_1">
+                            <label for="qp15">양구군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp16" name="qp_1">
+                            <label for="qp16">인제군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp17" name="qp_1">
+                            <label for="qp17">고성군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qp18" name="qp_1">
+                            <label for="qp18">양양군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qs1" name="qs_1">
+                            <label for="qs1">천안시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs2" name="qs_1">
+                            <label for="qs2">공주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs3" name="qs_1">
+                            <label for="qs3">보령시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs4" name="qs_1">
+                            <label for="qs4">아산시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs5" name="qs_1">
+                            <label for="qs5">서산시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs6" name="qs_1">
+                            <label for="qs6">논산시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs7" name="qs_1">
+                            <label for="qs7">계룡시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs8" name="qs_1">
+                            <label for="qs8">당진시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs9" name="qs_1">
+                            <label for="qs9">금산구</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs10" name="qs_1">
+                            <label for="qs10">부여군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs11" name="qs_1">
+                            <label for="qs11">서천군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs12" name="qs_1">
+                            <label for="qs12">청양군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs13" name="qs_1">
+                            <label for="qs13">홍성군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs14" name="qs_1">
+                            <label for="qs14">예산군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qs15" name="qs_1">
+                            <label for="qs15">태안군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qd1" name="qd_1">
+                            <label for="qd1">청주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd2" name="qd_1">
+                            <label for="qd2">충주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd3" name="qd_1">
+                            <label for="qd3">제천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd4" name="qd_1">
+                            <label for="qd4">보은군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd5" name="qd_1">
+                            <label for="qd5">옥천군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd6" name="qd_1">
+                            <label for="qd6">영동군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd7" name="qd_1">
+                            <label for="qd7">증평군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd8" name="qd_1">
+                            <label for="qd8">증평군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd9" name="qd_1">
+                            <label for="qd9">진천군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd10" name="qd_1">
+                            <label for="qd10">괴산군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd11" name="qd_1">
+                            <label for="qd11">음성군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qd12" name="qd_1">
+                            <label for="qd12">단양군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qf1" name="qf_1">
+                            <label for="qf1">전주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf2" name="qf_1">
+                            <label for="qf2">군산시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf3" name="qf_1">
+                            <label for="qf3">억산시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf4" name="qf_1">
+                            <label for="qf4">정읍시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf5" name="qf_1">
+                            <label for="qf5">남원시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf6" name="qf_1">
+                            <label for="qf6">김제시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf7" name="qf_1">
+                            <label for="qf7">완주군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf8" name="qf_1">
+                            <label for="qf8">진완군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf9" name="qf_1">
+                            <label for="qf9">무주군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf10" name="qf_1">
+                            <label for="qf10">장수군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf11" name="qf_1">
+                            <label for="qf11">임실군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf12" name="qf_1">
+                            <label for="qf12">순창군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf13" name="qf_1">
+                            <label for="qf13">고창군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qf14" name="qf_1">
+                            <label for="qf14">부안군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qg1" name="qg_1">
+                            <label for="qg1">목포시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg2" name="qg_1">
+                            <label for="qg2">여수시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg3" name="qg_1">
+                            <label for="qg3">순천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg4" name="qg_1">
+                            <label for="qg4">나주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg5" name="qg_1">
+                            <label for="qg5">광양시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg6" name="qg_1">
+                            <label for="qg6">담양군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg7" name="qg_1">
+                            <label for="qg7">곡성군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg8" name="qg_1">
+                            <label for="qg8">구례군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg9" name="qg_1">
+                            <label for="qg9">고흥군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg10" name="qg_1">
+                            <label for="qg10">보성군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg11" name="qg_1">
+                            <label for="qg11">화순군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg12" name="qg_1">
+                            <label for="qg12">장흥군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg13" name="qg_1">
+                            <label for="qg13">강진군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg14" name="qg_1">
+                            <label for="qg14">해남군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg15" name="qg_1">
+                            <label for="qg15">영암군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg16" name="qg_1">
+                            <label for="qg16">무안군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg17" name="qg_1">
+                            <label for="qg17">함평군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg18" name="qg_1">
+                            <label for="qg18">영광군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg19" name="qg_1">
+                            <label for="qg19">장성군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg20" name="qg_1">
+                            <label for="qg20">완도군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg21" name="qg_1">
+                            <label for="qg21">진도군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qg22" name="qg_1">
+                            <label for="qg22">신안군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qh1" name="qh_1">
+                            <label for="qh1">창원시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh2" name="qh_1">
+                            <label for="qh2">진주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh3" name="qh_1">
+                            <label for="qh3">통영시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh4" name="qh_1">
+                            <label for="qh4">사천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh5" name="qh_1">
+                            <label for="qh5">김해시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh6" name="qh_1">
+                            <label for="qh6">밀양시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh7" name="qh_1">
+                            <label for="qh7">거제시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh8" name="qh_1">
+                            <label for="qh8">양산시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh9" name="qh_1">
+                            <label for="qh9">의령군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh10" name="qh_1">
+                            <label for="qh10">함안군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh11" name="qh_1">
+                            <label for="qh11">창녕군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh12" name="qh_1">
+                            <label for="qh12">고성군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh13" name="qh_1">
+                            <label for="qh13">남해군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh14" name="qh_1">
+                            <label for="qh14">하동군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh15" name="qh_1">
+                            <label for="qh15">산청군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh16" name="qh_1">
+                            <label for="qh16">함양군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh17" name="qh_1">
+                            <label for="qh17">거창군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qh18" name="qh_1">
+                            <label for="qh18">합천군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qj1" name="qj_1">
+                            <label for="qj1">포항시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj2" name="qj_1">
+                            <label for="qj2">경주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj3" name="qj_1">
+                            <label for="qj3">김천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj4" name="qj_1">
+                            <label for="qj4">안동시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj5" name="qj_1">
+                            <label for="qj5">구미시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj6" name="qj_1">
+                            <label for="qj6">영주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj7" name="qj_1">
+                            <label for="qj7">영천시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj8" name="qj_1">
+                            <label for="qj8">상주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj9" name="qj_1">
+                            <label for="qj9">문경시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj10" name="qj_1">
+                            <label for="qj10">경산시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj11" name="qj_1">
+                            <label for="qj11">군위군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj12" name="qj_1">
+                            <label for="qj12">의성군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj13" name="qj_1">
+                            <label for="qj13">청송군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj14" name="qj_1">
+                            <label for="qj14">영양군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj15" name="qj_1">
+                            <label for="qj15">영덕군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj16" name="qj_1">
+                            <label for="qj16">청도군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj17" name="qj_1">
+                            <label for="qj17">고령군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj18" name="qj_1">
+                            <label for="qj18">성주군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj19" name="qj_1">
+                            <label for="qj19">칠곡군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj20" name="qj_1">
+                            <label for="qj20">예천군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj21" name="qj_1">
+                            <label for="qj21">봉화군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj22" name="qj_1">
+                            <label for="qj22">울진군</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qj23" name="qj_1">
+                            <label for="qj23">울릉군</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" id="qk1" name="qk_1">
+                            <label for="qk1">제주시</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="qk2" name="qk_1">
+                            <label for="qk2">서귀포시</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="area_bt grid">맨위로</a>
+
+    <div class="trick"></div>
+
+    <style type="text/css">
+        .area_form {
+            padding: 3.888vw 0 6.666vw;
+        }
+
+        .area_form>div:nth-child(1)>button {
+            background: #EDD87F;
+            border-radius: 1.111vw;
+            padding: 2.333vw 6.666vw;
+            font-size: 3.888vw;
+        }
+
+        .area_form>div:nth-child(1)>p {
+            line-height: 8.888vw;
+        }
+
+        .container {
+            width: 100%;
+            margin: 6.666vw auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tab_title li {
+            list-style: none;
+            text-align: center;
+            background: #F1F1F5;
+            width: 33.666vw;
+            padding: 2.333vw 0;
+            margin-bottom: 2.333vw;
+            border-radius: 1.111vw;
+            font-size: 3.888vw;
+        }
+
+        .tab_title li:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .tab_title li.on {
+            background-color: #EDD87F;
+        }
+
+        .tab_cont div {
+            display: none;
+        }
+
+        .tab_cont div.on {
+            display: block;
+        }
+
+        .tab_cont li {
+            background: #fff;
+            margin-bottom: 2.333vw;
+            font-size: 3.888vw;
+            width: 54vw;
+            border-radius: 1.111vw;
+            overflow: hidden;
+        }
+
+        .tab_cont li:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .tab_cont input {
+            display: none;
+        }
+
+        .tab_cont label {
+            display: inline-block;
+            background: #F1F1F5;
+            width: 100%;
+            height: 100%;
+            padding: 2.333vw 0 2.333vw 4.444vw;
+            box-sizing: border-box;
+        }
+
+        .tab_cont input:checked+label {
+            background: #EDD87F;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".tab_title li").click(function () {
+                var idx = $(this).index();
+                $(".tab_title li").removeClass("on");
+                $(".tab_title li").eq(idx).addClass("on");
+                $(".tab_cont > div").hide();
+                $(".tab_cont > div").eq(idx).show();
+            });
+
+            $('.tab_title').click(function () {
+                $('.tab_cont input').attr('checked', false);
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

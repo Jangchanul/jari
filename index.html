@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1">
+        <div>
+            <button type="button" class="hd_menu"></button>
+            <h1><img src="./img/logo.png" alt="로고"></h1>
+            <button type="button" class="my_bt" onclick="location.href='./bell.html'">
+                <div class="mypage_new"></div>
+            </button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+
+    <div class="main_map grid">
+        <p>현재위치 ㅣ 연수구 송도과학로232</p>
+        <button type="button" onclick="location.href='./location_set.html'"></button>
+    </div>
+
+    <div class="main_tab grid">
+        <div class="tab_wrap">
+            <div class="tab_menu_container">
+                <button class="tab_menu_btn on" type="button">식당</button>
+                <button class="tab_menu_btn" type="button">술집</button>
+                <button class="tab_menu_btn" type="button">숙소</button>
+                <button class="tab_menu_btn" type="button">뷰티</button>
+                <button class="tab_menu_btn" type="button">웰빙</button>
+            </div> <!-- tab_menu_container e -->
+
+            <div class="tab_box_container">
+                <div class="tab_box on">
+                    <ul>
+                        <li onclick="location.href='./market_list.html'">
+                            <div><img src="./img/a1.png" alt=""></div>
+                            <p>한식</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a2.png" alt=""></div>
+                            <p>중식</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a3.png" alt=""></div>
+                            <p>일식/회</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a4.png" alt=""></div>
+                            <p>소고기</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a5.png" alt=""></div>
+                            <p>돼지고기</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a6.png" alt=""></div>
+                            <p>닭/오리</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a7.png" alt=""></div>
+                            <p>장어/보양</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a8.png" alt=""></div>
+                            <p>곱창/막창</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a9.png" alt=""></div>
+                            <p>국밥/찌개</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a10.png" alt=""></div>
+                            <p>찜/탕</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a11_1.png" alt=""></div>
+                            <p>해산물</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a11.png" alt=""></div>
+                            <p>면류</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a12.png" alt=""></div>
+                            <p>레스토랑</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a13.png" alt=""></div>
+                            <p>뷔페</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a14.png" alt=""></div>
+                            <p>브런치</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/a16.png" alt=""></div>
+                            <p>백반</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab_box">
+                    <ul>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/b1.png" alt=""></div>
+                            <p>포차</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/b2.png" alt=""></div>
+                            <p>호프</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/b3.png" alt=""></div>
+                            <p>막걸리</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/b4.png" alt=""></div>
+                            <p>이자카야</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/b5.png" alt=""></div>
+                            <p>라이브카페</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/b6.png" alt=""></div>
+                            <p>바</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/b7.png" alt=""></div>
+                            <p>노래연습장</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/b8.png" alt=""></div>
+                            <p>클럽</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="tab_box">
+                    <ul>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/c1.png" alt=""></div>
+                            <p>모텔</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/c2.png" alt=""></div>
+                            <p>호텔</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/c3.png" alt=""></div>
+                            <p>프리미엄호텔</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/c4.png" alt=""></div>
+                            <p>펜션</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/c5.png" alt=""></div>
+                            <p>리조트</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/c6.png" alt=""></div>
+                            <p>풀빌라</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/c7.png" alt=""></div>
+                            <p>게스트하우스</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/c8.png" alt=""></div>
+                            <p>캠핑</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab_box">
+                    <ul>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/d1.png" alt=""></div>
+                            <p>미용실</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/d2.png" alt=""></div>
+                            <p>미용원</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/d3.png" alt=""></div>
+                            <p>네일아트</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/d4.png" alt=""></div>
+                            <p>피부/체험</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/d5.png" alt=""></div>
+                            <p>마사지</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/d6.png" alt=""></div>
+                            <p>두피/탈모</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/d7.png" alt=""></div>
+                            <p>성형</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/d8.png" alt=""></div>
+                            <p>테닝</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="tab_box">
+                    <ul>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e1.png" alt=""></div>
+                            <p>커피/음료</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e2.png" alt=""></div>
+                            <p>스크린골프</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e3.png" alt=""></div>
+                            <p>파3골프장</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e4.png" alt=""></div>
+                            <p>볼링장</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e5.png" alt=""></div>
+                            <p>동물병원</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e6.png" alt=""></div>
+                            <p>한의원</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e7.png" alt=""></div>
+                            <p>치과</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e8.png" alt=""></div>
+                            <p>피부과</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e9.png" alt=""></div>
+                            <p>안경점</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e10.png" alt=""></div>
+                            <p>피트니스</p>
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e11.png" alt=""></div>
+                            <p>자동차</p> 
+                        </li>
+                        <li onclick="location.href=''">
+                            <div><img src="./img/e12.png" alt=""></div>
+                            <p>출장세차</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div> <!-- tab_box_container e -->
+        </div> <!-- tab_wrap e -->
+    </div>
+
+    <div class="main_event grid">
+        <h2>이벤트<span class="for_bt"></span></h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" onclick="location.href='./event_list.html'">
+                    <div class="swr_bor"><img src="./img/s1.png" alt=""></div>
+                    <h3 class="swr_h3">[이벤트]신메뉴 떡볶이 오픈!</h3>
+                    <p class="swr_p">[인천]김세는 김밥</p>
+                </div>
+                <div class="swiper-slide" onclick="location.href='./event_list.html'">
+                    <div class="swr_bor"><img src="./img/s1.png" alt=""></div>
+                    <h3 class="swr_h3">[이벤트]신메뉴 떡볶이 오픈!</h3>
+                    <p class="swr_p">[인천]김세는 김밥</p>
+                </div>
+                <div class="swiper-slide" onclick="location.href='./event_list.html'">
+                    <div class="swr_bor"><img src="./img/s1.png" alt=""></div>
+                    <h3 class="swr_h3">[이벤트]신메뉴 떡볶이 오픈!</h3>
+                    <p class="swr_p">[인천]김세는 김밥</p>
+                </div>
+                <div class="swiper-slide" onclick="location.href='./event_list.html'">
+                    <div class="swr_bor"><img src="./img/s1.png" alt=""></div>
+                    <h3 class="swr_h3">[이벤트]신메뉴 떡볶이 오픈!</h3>
+                    <p class="swr_p">[인천]김세는 김밥</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            $(function () {
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1.4,
+                    spaceBetween: 10,
+                });
+
+                $('.tab_menu_btn').on('click', function () {
+                    //버튼 색 제거,추가
+                    $('.tab_menu_btn').removeClass('on');
+                    $(this).addClass('on')
+
+                    //컨텐츠 제거 후 인덱스에 맞는 컨텐츠 노출
+                    var idx = $('.tab_menu_btn').index(this);
+
+                    $('.tab_box').hide();
+                    $('.tab_box').eq(idx).show();
+                });
+            })
+        </script>
+    </div>
+
+    <div class="main_guin grid">
+        <h2>구인구직</h2>
+        <p>인천광역시 연수구<span class="for_bt"></span></p>
+        <ul>
+            <li onclick="location.href='./job_view.html'">
+                <div>
+                    <p>주방보조 한분 모십니다!</p>
+                    <p>시금 l 9,000원</p>
+                </div>
+                <button type="button" class="list_bt"></button>
+            </li>
+            <li onclick="location.href='./job_view.html'">
+                <div>
+                    <p>주방보조 한분 모십니다!</p>
+                    <p>시금 l 9,000원</p>
+                </div>
+                <button type="button" class="list_bt"></button>
+            </li>
+            <li onclick="location.href='./job_view.html'">
+                <div>
+                    <p>주방보조 한분 모십니다!</p>
+                    <p>시금 l 9,000원</p>
+                </div>
+                <button type="button" class="list_bt"></button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main_dogge grid">
+        <h2>도깨비장터</h2>
+        <p>인천광역시 연수구<span class="for_bt"></span></p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" onclick="location.href='./direct_view.html'">
+                    <div class="swr_bor"><img src="./img/s2.png" alt=""></div>
+                    <h3 class="swr_h3">양식용 접시 팝니다</h3>
+                    <p class="swr_p">10,000원</p>
+                </div>
+                <div class="swiper-slide" onclick="location.href='./direct_view.html'">
+                    <div class="swr_bor"><img src="./img/s2.png" alt=""></div>
+                    <h3 class="swr_h3">양식용 접시 팝니다</h3>
+                    <p class="swr_p">10,000원</p>
+                </div>
+                <div class="swiper-slide" onclick="location.href='./direct_view.html'">
+                    <div class="swr_bor"><img src="./img/s2.png" alt=""></div>
+                    <h3 class="swr_h3">양식용 접시 팝니다</h3>
+                    <p class="swr_p">10,000원</p>
+                </div>
+                <div class="swiper-slide" onclick="location.href='./direct_view.html'">
+                    <div class="swr_bor"><img src="./img/s2.png" alt=""></div>
+                    <h3 class="swr_h3">양식용 접시 팝니다</h3>
+                    <p class="swr_p">10,000원</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="trick2"></div>
+
+    <footer class="bt_wrap grid">
+        <div>
+            <div></div>
+            <a href="./store_app_1.html">
+                <div><img src="./img/bta.png" alt=""></div>
+            </a>
+        </div>
+        <ul class="bt_nav">
+            <li onclick="location.href='./index.html'" class="ft_on">
+                <div></div>
+            </li>
+            <li onclick="location.href='./direct_shop.html'">
+                <div></div>
+            </li>
+            <li onclick="location.href='./job_search.html'">
+                <div></div>
+            </li>
+            <li onclick="location.href='./set.html'">
+                <div></div>
+            </li>
+        </ul>
+    </footer>
+
+    <div class="ham_menu">
+        <div class="ham_bg"></div>
+        <div class="ham_wrap">
+            <div>
+                <div>
+                    <div><img src="" alt=""></div>
+                    <h2>메뉴</h2>
+                </div>
+                <div>
+                    <h3>홍길동</h3>
+                    <button type="button" class="my_page_bt"></button>
+                    <button type="button" class="my_page_bt my_shop_bt"
+                        onclick="location.href='./mart_set.html'"></button>
+                </div>
+                <h3>signin@email.com</h3>
+                <button type="button" class="log_bt" onclick="location.href='./login.html'">로그아웃</button>
+            </div>
+            <div>
+                <div onclick="location.href='./reser_status.html'">
+                    <p><span></span>예약현황</p>
+                </div>
+                <div onclick="location.href='./reser_status.html'">
+                    <p><span></span>긴급구인구직</p>
+                </div>
+                <div onclick="location.href='./do_mart.html'">
+                    <p><span></span>도깨비마트</p>
+                </div>
+                <div onclick="location.href='./use_history.html'">
+                    <p><span></span>이용내역</p>
+                </div>
+            </div>
+            <div>
+                <div onclick="location.href='./set.html'">
+                    <p><span></span>설정</p>
+                </div>
+                <div onclick="location.href='./info.html'">
+                    <p><span></span>고객센터</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .tab_menu_container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6.666vw;
+        }
+
+        .tab_menu_btn {
+            width: 17.777vw;
+            background: none;
+            font-size: 4.444vw;
+            font-weight: bold;
+            color: #fb0000;
+            box-sizing: border-box;
+            padding: 1.111vw 4vw;
+            border-radius: 1.111vw;
+        }
+
+        .tab_box_container>.tab_box>ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tab_box_container>.tab_box>ul>li {
+            width: 25%;
+            text-align: center;
+            font-size: 3.888vw;
+            font-weight: bold;
+            margin-bottom: 4.444vw;
+        }
+
+        .tab_box_container>.tab_box>ul>li>div {
+            width: 16.111vw;
+            height: 16.111vw;
+            margin: 0 auto 3.333vw;
+        }
+
+        .tab_menu_btn.on {
+            font-weight: 700;
+            background: #191919;
+            color: #EDD87F;
+        }
+
+        .tab_box {
+            display: none;
+        }
+
+        .tab_box.on {
+            display: block;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</body>
+
+</html>

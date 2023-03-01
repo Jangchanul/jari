@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()">FAQ</button>
+            <button type="button" class="hd_not"></button>
+        </div>
+
+    </header>
+
+    <div class="trick"></div>
+
+    <ul class="info1 faq_m grid">
+        <li>
+            <p>입점신청은 어떻게 하나요?</p>
+            <div class="faq_hidden">
+                <div><img src="./img/aa2.png" alt=""></div>
+                <p>이용 내역에서 이용한 가게를 선택하신 후 하단의 버튼을 이용해주시길 바랍니다.</p>
+            </div>
+        </li>
+        <li>
+            <p>가게 인증샷은 어떻게 남기나요?</p>
+            <div class="faq_hidden">
+                <div><img src="./img/aa2.png" alt=""></div>
+                <p>이용 내역에서 이용한 가게를 선택하신 후 하단의 버튼을 이용해주시길 바랍니다.</p>
+            </div>
+        </li>
+    </ul>
+
+    <div class="trick"></div>
+
+    <script type="text/javascript">
+        $(function(){
+            $('.faq_m>li>p').click(function(){
+                $(this).siblings('.faq_hidden').slideToggle(200);
+            });
+        });
+    </script>
+</body>
+
+</html>

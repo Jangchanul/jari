@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>예약의품격</title>
+</head>
+
+<body>
+    <header class="hd_1 hd_2 hd_3">
+        <div>
+            <button type="button" class="hd_back hd_back2" onclick="history.back()"></button>
+            <button type="button" class="hd_not"></button>
+        </div>
+    </header>
+
+    <div class="event_view direct_view">
+        <div><img src="./img/aa5.png" alt=""></div>
+        <section class="grid">
+            <h2>10,000원</h2>
+            <div>
+                <p>게시일<span>21.10.27 | 15:00</span></p>
+                <button type="button" class="dr_menu"></button>
+            </div>
+
+        </section>
+
+        <ul class="dir_ul grid">
+            <li>
+                <h2>[급처] 양식용 접시 급처합니다!</h2>
+                <div><img src="./img/aa6.png" alt=""></div>
+                <p>안녕하세요! 양식용 접시 세트 급처합니다 상태 깨끗해요 :)</p>
+            </li>
+            <li>
+                <h2>게시글 정보</h2>
+                <div>
+                    <p>게시자</p>
+                    <p>홍*동</p>
+                </div>
+                <div>
+                    <p>직거래지역</p>
+                    <p>인천광역시 연수구</p>
+                </div>
+                <div>
+                    <p>연락처<span class="p_dire"></span></p>
+                    <p>010-2222-2232</p>
+                    <div>
+                        <a href="tel:010-2222-2222"></a>
+                        <a href="mailto:test@gmail.com"></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="grid">
+            <button type="button" class="bt_ne bt_net" onclick="location.href='./index.html'">
+                <p>거래신청하기</p>
+            </button>
+            <!--
+                <button type="button" class="bt_ne bt_ne3" onclick="location.href='./index.html'">
+                    <p>거래신청완료한 물품입니다.</p>
+                </button>
+            -->
+        </div>
+
+        <script>
+            function delOk() {
+                if (!confirm('삭제하시면 복구할수 없습니다. \n 정말로 삭제하시겠습니까??')) {
+                    return false;
+                }
+            }
+        </script>
+
+    </div>
+
+    <div class="dim_wrap direct_dims">
+        <ul>
+            <li onclick="location.href='./direct_write.html'">
+                <p>수정하기</p>
+            </li>
+            <li onclick="delOk()">
+                <p>삭제하기</p>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function delOk() {
+            if (!confirm('이 게시글을 삭제할까요?')) {
+                return false;
+            }
+        }
+        $(function(){
+            $('.dr_menu').click(function(){
+                $('.direct_dims').fadeIn();
+            });
+            $('.direct_dims').click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+
+    <div class="trick"></div>
+</body>
+
+</html>
